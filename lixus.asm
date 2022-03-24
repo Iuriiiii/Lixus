@@ -208,7 +208,7 @@ include './luaf.inc'
 section '.idata' import data readable writeable
 
 library msvcrt,'msvcrt.dll',\
-        lua53,'lua53.dll',\
+        lua,'lua54.dll',\
         user32,'user32.dll',\
         kernel32,'kernel32.dll',\
         ntdll,'ntdll.dll',\
@@ -355,7 +355,7 @@ import msvcrt,\
        wcslen,'wcslen',\
        strstr,'strstr'
 
-import lua53,\
+import lua,\
        luaL_openlibs,'luaL_openlibs',\
        luaL_newstate,'luaL_newstate',\
        lua_close,'lua_close',\
@@ -422,7 +422,8 @@ section '.edata' export data readable
          Lixus_EnableTable,'lixus_enabletable',\
          Lixus_EnableWindow,'lixus_enablewindow',\
          Lixus_EnableProcess,'lixus_enableprocess',\
-         Lixus_EnableClip,'lixus_enableclip'
+         Lixus_EnableClip,'lixus_enableclip',\
+         Lixus_DoFile,'lixus_dofile'
 
 section '.reloc' fixups data readable discardable
 

@@ -173,6 +173,7 @@
 
         lixus_lib_window_select_action_enable_title db 'enable',0
         lixus_lib_window_select_action_disable_title db 'disable',0
+        ;lixus_lib_window_select_action_setenabled_title db 'setEnabled',0
         lixus_lib_window_select_action_hide_title db 'hide',0
         lixus_lib_window_select_action_show_title db 'show',0
         lixus_lib_window_select_action_minimize_title db 'minimize',0
